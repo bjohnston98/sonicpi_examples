@@ -13,8 +13,19 @@ def dry(heat)
   sleep(1)
 end
 
+def Shout_stain_removal()
+  stain = [true, false].choose
+  if stain == true
+    sample (:bass_voxy_hit_c)
+    sleep(1)
+  else sample (:misc_crow)
+    sleep(1)
+  end
+end
+
 3.times do
   wear(1)
+  Shout_stain_removal()
   wash(70)
   dry(:elec_wood)
 end
